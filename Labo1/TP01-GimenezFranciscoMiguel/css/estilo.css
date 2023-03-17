@@ -49,15 +49,12 @@ h3 {
     text-align:center;
 }
 figure {
-    width: 29%;
+    width: 40%;
     float: left;
     margin-right: 1em;
 }
 article p{
     font-size: 18px;
-}
-main p{
-    margin:45px;
 }
 figure img {
     vertical-align: text-top;
