@@ -1,0 +1,111 @@
+/*Complete y comente el código de este archivo*/
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 1em;
+    background-color: #015325;
+    color:#fff;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav {
+    background-color: lightgreen;
+}
+
+nav li {
+    padding: 1em;
+    float:left;
+}
+
+nav ul {
+    list-style: none;
+    overflow:hidden;
+}
+
+nav a {
+    padding: 1em;
+    text-decoration: none;
+    color:#000;
+}
+
+nav a:hover, nav a:focus {
+    background-color: seagreen;
+}
+
+h2 {
+    margin-bottom: 1em;
+}
+
+h3 {
+    margin:10px;
+    text-align:center;
+}
+figure {
+    width: 29%;
+    float: left;
+    margin-right: 1em;
+}
+article p{
+    font-size: 18px;
+}
+main p{
+    margin:45px;
+}
+figure img {
+    vertical-align: text-top;
+    width: 100%;
+    height:auto;
+}
+.color{
+    background-color:#ecfa2a;
+}
+
+footer {
+    background-color: lightgreen;
+    text-align: center;
+}
+
+footer img {
+    width: 5em;
+}
+main, aside, .estudios {
+    display: inline-block;
+}
+main, .estudios{
+    max-width:75%;
+}
+main {
+    padding-top: 2em;
+    width: 75%;
+}
+.estudios{
+    margin:15px;
+}
+aside {
+    vertical-align: top;
+    width: 24%;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    height:100%;
+    background-color: #ded;
+}
+aside a{
+    text-decoration: none;
+    color:#000;
+}
+aside h2 {
+    margin-bottom: 1.5em;
+}
+aside img {
+    margin:30px;
+    width: 15em;
+}
