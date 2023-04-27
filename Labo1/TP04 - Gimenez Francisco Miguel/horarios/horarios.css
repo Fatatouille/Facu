@@ -1,0 +1,44 @@
+td, th{
+    border:1px solid #000;
+    width:10%;
+    text-align: center;
+}
+th{
+    background:#476cff;
+    color:#fff;
+}
+td:hover{
+    background: #ff0000;
+    width:15%;
+}
+th:hover{
+    background:#19d400;
+    padding-top:1em;
+    padding: 1em 0px;
+}
+table{
+    border-collapse: collapse;
+    margin:auto;
+}
+.naranja{
+    background:#ffbb00;
+    color:#000;
+}
+.amarillo{
+    background: #ffff00;
+    color:#000;
+}
+.marron{
+    background: #80370d;
+    color:#fff;
+}
+.morado{
+    background:#8b008b;
+    color:#fff;
+}
+.lmo{
+    color:#a100a1;
+}
+.lma{
+    color:#80370d;
+}

@@ -1,0 +1,61 @@
+*{
+    border:0;
+    margin:0;
+    padding:0;
+}
+main{
+    background: #5e8bdf;
+    padding:.3em;
+}
+h1, legend{
+    text-align: center;
+}
+h1{
+    padding:1em;
+}
+legend{
+    padding: .5em .3em 1em .4em;
+}
+form{
+    background: #fff;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    margin:.4em;
+    border:solid 1px;
+}
+input[type="submit"], input[type="button"]{
+    background: #5e8bdf;
+    padding:.8em;
+    border:0;
+    color:#fff;
+    margin-left:.8em;
+    cursor:pointer;
+}
+.botones{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+fieldset{
+    margin-top:1em;
+    width:95%;
+    padding:1em;
+    color:#fff;
+}
+.recursa{
+    text-align: left;
+    padding:0;
+}
+.rosa, .rosa legend{
+    background: #e00038;
+}
+.amarillo, .amarillo legend{
+    background: #f7a935;
+}
+.verde, .verde legend{
+    background: #089108;
+}

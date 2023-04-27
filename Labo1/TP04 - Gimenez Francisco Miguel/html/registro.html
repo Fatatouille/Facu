@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es-la">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berserk</title>
+    <link rel="icon" href="../img/logo.ico">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asap:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#contenido">Contenido</a></li>
+            <li><a href="#nav">Navegación</a></li>
+        </ul>
+    </nav>
+    <header>
+        <figure>
+        <img src="../img/Berserk_anime_logo.png" alt="Logo de Berserk" title="Logo de Berserk">
+        <h1>Berserk</h1>
+        </figure>
+        <ul>
+            <a href="../index.html"><li>Inicio</li></a>
+            <a href="reparto.html"><li>Reparto</li></a>
+            <a href="datos.html"><li>Datos</li></a>
+        </ul>
+        <nav id="nav">
+        <ul>
+            <a href="registro.html"><li>Inicio/Registro</li></a>
+        </ul>
+        </nav>    
+    </header>
+    <main class="formu" id="contenido">
+        <form action="suscripcion.php" method="post">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre">
+            <label for="mail">Email</label>
+            <input type="email" name="mail">
+            <label for="contra">Contraseña</label>
+            <input tyoe="password" name="contra">
+            <label for="nacimiento">Fecha de nacimiento</label>
+            <input type="date" name="nacimiento">
+            <label for="pais">País</label>
+            <select name="pais">
+                <option value="Argentina">Argentina</option>
+                <option value="Chile">Chile</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="otros">otros</option>
+            </select>
+            <fieldset>
+            <legend>¿Quiere recibir novedades y promociones?</legend>
+            <label for="si">Si</label><input type="radio" name="noti" id="si" value="si">
+            <label for="no">No</label><input type="radio" name="noti" id="no" value="no">
+            </fieldset>
+            <input type="submit" value="Suscribir" name="suscribir">
+        </form>
+    </main>
+    <aside class="ado">
+        <h3>¿Algún inconveniente?</h2>
+        <form action="contacto.php" method="post">
+            <label for="email">Email</label>
+            <input type="mail" name="email" id="email">
+            <label for="asunto">Asunto</label>
+            <input type="text" name="asunto" id="asunto">
+            <label for="consulta">Consulta</label>
+            <textarea cols="40" rows="8" name="consulta" placeholder="Escriba su consulta aquí"></textarea>
+            <input type="submit" name="enviar" value="Enviar">
+        </form>
+    </aside>
+    <footer>
+        © copyright Giménez Francisco Miguel
+        <legend><a href="mailto:franciscomiguelgimenez708@gmail.com">Gmail</a></legend>
+    </footer>
+</body>
+</html>
