@@ -6,6 +6,7 @@
 main{
     background: #5e8bdf;
     padding:.3em;
+    height:100%;
 }
 h1, legend{
     text-align: center;
@@ -39,6 +40,7 @@ input[type="submit"], input[type="button"]{
     display:flex;
     justify-content: center;
     align-items: center;
+    padding:1em;
 }
 fieldset{
     margin-top:1em;

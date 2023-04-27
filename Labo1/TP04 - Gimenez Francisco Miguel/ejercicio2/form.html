@@ -49,12 +49,12 @@
                     <input type="time" name="hora" id="hora"><br>
                     <label for="satisfaccion">Indique el grado de satisfacción respecto a la materia (bajo)<input type="range" name="satisfaccion" id="satisfaccion" min="0" max="100" step="5">(alto)</label><br>
                     <label for="calificacion">¿Del 1 al 10 como califiaría el dictado de la materia?</label>
-                    <input type="number" name="calificacion" id="calificacion" min="1" max="10" value="5">
+                    <input type="number" name="calificacion" required id="calificacion" min="1" max="10" value="5">
                 </fieldset>
-                <fieldset class="botones">
+                <section class="botones">
                 <input type="submit" name="enviar" value="Enviar">
                 <input type="button" name="limpiar" value="Limpiar">
-                </fieldset>
+                </section>
             </form>
     </main>
 </body>
