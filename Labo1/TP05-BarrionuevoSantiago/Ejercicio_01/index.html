@@ -1,0 +1,113 @@
+<!DOCTYPE html> <!-- DOCTYPE indica al Navegador que versión de HTML estamos utilizando -->
+<html lang="es-la"> <!--• La Etiqueta HTML indica que allí inicia el archivo. El Atributo lang, indica en qué idioma estará hecho el archivo..-->
+
+<head>  <!-- La Etiqueta head (cabeza o cabecera), contiene configuraciones que generalmente no se muestran directamente en la página, a excepción de title -->
+    <!-- Los metas indican información adicional -->
+    <meta charset="UTF-8">  <!-- indica que se debe usar un conjunto de caracteres que haga posible mostrar todos los símbolos del español y más -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   <!-- Sirve para saber la compatibilidad con los navegadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--  sirve para optimizar los sitios para móviles, esta etiqueta ayuda a definir el ancho, alto y escala del área usada por el navegador para mostrar contenido.  -->
+    <meta name="description" content="Acá encontrarás todo la información del juego 'The Binding Of Isaac'">
+    <meta name="author" content="Barrionuevo Santiago">
+    <title>VIDEOJUEGO</title>  <!-- Sirve para dar un titulo a la página -->
+    <link rel="stylesheet" href="css/estilo.css">   <!-- Enlaza una hoja de estilo (CSS) a la página -->
+
+</head> <!-- Etiqueta que finaliza el Head -->
+
+<body>  <!-- Contiene todo el cuerpo de la página, lo que se vé en ella -->
+    <nav class="salto_navegacion">   <!-- Sirve para poner una barra de navegación donde hay enlaces, para manejarse entre el sitio -->
+        <ul class="lista_salto">    <!-- ul "unordered list" (lista desordenada) sirve para contener elementos de lista no ordenados -->
+            <li><a class="salto_link" title="inicio del sitio" href="#principal">Saltar al contenido</a></li>   <!-- li (list items- elementos de lista) acá se pone tode los elementos que desea usar. Como un "a" que es una etiqueta para enlaces. Esta te devuelve a la misma página o al incio -->
+            <li><a class="salto_link" title="Final del sitio" href="#navegar">Saltar a la Navegación</a></li> 
+        </ul>  <!-- Cierre de la etiqueta ul -->            
+    </nav>
+   
+    
+    <header class="encabezado">    <!-- El header (Encabezado) aquí debe de contener el Titulo, el logo e información introductoria -->
+
+        <section id="contenedor-menu">
+            <section class="contenedor_logo">
+                <img src="img/kanji.png"  class="imagen_logo" alt="Kanji con el nombre de Sekiro">
+                <h1>SEKIRO: SHADOWS DIE TWICE</h1>
+            </section>
+            <a href="#contenedor-menu"><img src="img/burger_menu.png" alt="icono abrir navbar" id="abrir"></a>
+            <a href="#"><img src="img/cerrar_menu.png" alt="icono cerrar navbar" id="cerrar"></a>
+            
+            <nav id="contenedor-enlaces">
+                
+                <ul id="navegar">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="html/galeria.html">Galeria</a></li>
+                    <li><a href="html/tabla.html">Información Adicional</a></li>
+                    <li><a href="html/registro.html">Registro</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+       <!-- Finaliza el header -->
+
+    
+   
+    
+        <main id="principal">  <!-- Está etiqueta es para contener lo principal de la página, toda la información, fotos, textos, videos, etc -->
+            <section class="contenedor_principal">
+                <article class="articulo_principal">
+                    <h2>Introducción</h2>
+                    <figure>
+                        <img src="img/sekiro.jpg" alt="Portada de Sekiro">
+                        <figcaption>Portada de Sekiro: Shaows die Twice</figcaption>
+                    </figure>
+                    <p>Sekiro: Shadows Die Twice es un videojuego de acción-aventura desarrollado por FromSoftware y publicado por Activision. Dirigido por Hidetaka Miyazaki; su fecha de estreno fue el 22 de marzo de 2019 para PlayStation 4, Xbox One y Microsoft Windows. Su historia la protagoniza un shinobi llamado Sekiro, cuya intención es la de vengarse de un samurái que le atacó y secuestró a su señor.<br>
+
+                        Ambientado en los últimos años del período Sengoku; Sekiro: Shadows Die Twice representa un mundo marchito pero vivaz, generado por una reinterpretación de la estética de inspiración japonesa; donde se desarrolla la batalla de un shinobi solitario, sujeto al código. Recorre libremente ambientes tridimensionales abiertos, meticulosamente diseñados y rebosantes de secretos para explorar, mientras utilizas todo lo que tienes a tu disposición para enfrentarte a enemigos poderosos en esta experiencia totalmente única.</p>
+                    <figure>
+                        <img src="img/escenario.jpg" alt="Escenario de Sekiro">
+                        <figcaption><em>Escenario de la pelea contra el primer jefe del juego</em></figcaption>
+                    </figure>
+                </article>
+                <article class="articulo_principal">
+                    <h2>Desarrollo del Juego</h2>
+                    <figure>
+                        <img src="img/art1.jpg" alt="Libro de arte con jefes de Sekiro">
+                        <figcaption>Libro de arte con jefes de Sekiro</figcaption>
+                    </figure>
+                    <p>El desarrollo de Sekiro comenzó a finales de 2015, tras la finalización del DLC para Bloodborne, The Old Hunters. El juego fue revelado a través de un breve tráiler durante el evento The Game Awards de 2017, mostrando el lema Shadows Die Twice. Posteriormente, fue anunciado su título oficial, Sekiro: Shadows Die Twice, en la conferencia de prensa de Microsoft en la E3 2018.</p>
+                    <figure>
+                        <img src="img/coleccionista.jpg" alt="edicion coleccionista de Sekiro">
+                        <figcaption>Edición coleccionista de Sekiro</figcaption>
+                    </figure>
+                    <p>El juego es dirigido por Hidetaka Miyazaki del estudio From Software, conocidos principalmente por ser los creadores de la saga Souls y Bloodborne, y fue publicado por Activision. La fecha de lanzamiento del juego se anunció durante la Gamescom de 2018, para el 22 de marzo de 2019 en las plataformas PlayStation 4, Xbox One y Microsoft Windows. La edición coleccionista del videojuego incluye una caja metálica, una figura del protagonista, un libro de arte, un mapa del mundo del juego, un código de descarga para la banda sonora y tres fichas que replican el dinero utilizado en el juego.</p>
+                    <figure>
+                        <img src="img/art3.jpg" alt="Diseño del protgaonista e Sekiro y su espada">
+                        <figcaption>Diseño del protgaonista e Sekiro y su espada</figcaption>
+                    </figure>
+                </article>
+                <article class="articulo_principal">
+                    <h2>Historia</h2>
+                    <p>En Sekiro™: Shadows Die Twice encarnas al 'lobo manco', un guerrero desfigurado y caído en desgracia que ha sido rescatado al borde de la muerte.</p>
+                    <figure>
+                        <img src="img/prota.jpg" alt="Protagonista de Sekiro">
+                        <figcaption>Protagonista de Sekiro</figcaption>
+                    </figure>
+                    <p>Tras jurar proteger a un joven señor descendiente de un antiguo linaje, te conviertes en el objetivo de despiadados enemigos, entre ellos el peligroso clan Ashina. Desesperado por salvar a su clan, el nieto de Isshin, Genichiro, buscó a Kuro, el descendiente celestial, para poder usar el "Acervo del Dragón" del niño para crear un ejército inmortal. Lobo, ahora un shinobi de pleno derecho y el guardaespaldas personal de Kuro, pierde su brazo izquierdo al no poder detener a Genichiro. Sin embargo, ya que recibió la sangre del dragón de Kuro tres años atrás.</p>
+                    <figure>
+                        <img src="img/jefes.jpg" alt="3 jefes de Sekiro">
+                        <figcaption>3 Jefes de Sekiro: Shadows die Twice</figcaption>
+                    </figure>
+                    <p>Lobo sobrevive a sus heridas y se despierta en un templo abandonado. En el templo, se encuentra con el Escultor, un antiguo shinobi llamado Orangután que ahora esculpe estatuas de Buda, y Lobo encuentra que su brazo perdido ha sido reemplazado por la Prótesis Shinobi, un brazo artificial sofisticado que puede empuñar una gran variedad de artilugios y armas.</p>
+                    <p>Con la prótesis Shinobi, Lobo deberá enfrentarse a numerosos enemigos a través del castillo Ashina que intenta asaltar para enfrentarse nuevamente a Genichiro y rescatar a Kuro.</p>
+                    <figure>
+                        <img src="img/genichirp.jpg" alt="primer jefe del juego">
+                        <figcaption>Genichiro, primer jefe de Sekiro: Shadows die Twice</figcaption>
+                    </figure>
+                </article>
+                
+            </section>
+            
+        </main> <!-- Cierre del main -->
+    
+    <footer id="pie_pagina">    <!-- Sirve para contener información adicional como: datos de derechos de autor, enlaces de documentos relacionados, autor de la seccion-->
+        <p>© copyright Gimenez Francisco</p>
+        <a href="mailto:franciscomiguelgimenez708@gmail.com">Correo Electronico</a>
+    </footer>   <!-- Cierre del footer -->
+</body> <!-- Cierre del body -->
+</html> <!-- Cierre del html -->

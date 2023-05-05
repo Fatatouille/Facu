@@ -1,0 +1,525 @@
+/* ---------------------------- CAMBIOS GENERALES -----------------------------------*/
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+
+/* ---------------------------- DISEÑO PARA CELULAR -----------------------------------*/
+
+/* ----------------- Salto de Navegación ------------------------*/
+.salto_navegacion {
+    background-color: #101010;
+    padding: .25em;
+}
+
+.lista_salto {
+    display: flex;
+    justify-content: space-between;
+    padding: .7em 0px;
+}
+
+.lista_salto li a{
+    background-color: #e27b1a;
+    padding: .7em;
+    margin: .8em 0px;
+    border-radius: 1em;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: background-color .6s ease;
+
+}
+
+.lista_salto li a:hover, .lista_salto li a:focus{
+    background:linear-gradient(to top,#e27b1a,#e2ad1a) ;
+    transition: background-color .6s ease;
+}
+
+/* ----------------- Header ------------------------*/
+
+/* ------------------- Barra de Navegación ------------------------*/
+.contenedor_logo {
+    display: flex;
+    font-size: 1em;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#contenedor-menu{
+    background: linear-gradient(15deg,#101010,#121212,#151515,#181818,#222222,#252525,#292929,#807f7f,#afafaf,#c0c0c0);
+}
+
+#contenedor-menu img {
+    width: 3.2em;
+    
+}
+
+
+/* ------------------- Botones de navegación ------------------------*/
+
+
+#contenedor-menu #cerrar {
+    display: none;
+}
+
+#contenedor-menu:target #abrir {
+    display: none;
+}
+
+#contenedor-menu:target #cerrar {
+    display: block;
+}
+
+
+/* ------------------- Enlaces de navegación ------------------------*/
+
+#contenedor-enlaces{
+    color: #f5f3f5;
+    padding: 0px .25em;
+}
+
+#contenedor-menu #contenedor-enlaces {
+    height: 0;
+    transition: height .5s linear;
+    overflow: hidden;
+}
+
+
+
+#contenedor-menu:target #contenedor-enlaces {
+    height: 30vh;   
+    transition: height .5s linear;
+}
+
+#contenedor-enlaces a {
+    text-align: center;
+    display: block;
+    margin: .4em 0px;
+    padding: .4em .8em;
+    border-radius: 1em;
+    background-color: #151516;
+    transition: background-color .6s ease;
+
+}
+
+#contenedor-enlaces a:hover, #contenedor-enlaces a:focus{
+    background-color: #e27b1a;
+    transition: background-color .6s ease;
+}
+
+
+
+/* ----------------------------------------- MAIN - INDEX -------------------------------------------*/
+
+    .contenedor_principal{
+        background-color: #202029;
+        padding: 1.5%;
+        text-align: center;
+    }
+
+    .articulo_principal{
+        background-color: #835932;
+        padding: 2%;
+        border-radius: 1em;
+        margin-bottom: 1em;
+    }
+
+    .articulo_principal h2{
+        margin-bottom: .5em;
+    }
+
+    .articulo_principal img{
+        border-radius: .8em;
+        border: #7e7e83 .25em solid;
+        max-width: 80vw;
+    }
+
+    .articulo_principal p{
+        margin: .8em ;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+
+
+/* ----------------------------------------- MAIN - GALERIA -------------------------------------------*/
+
+    .contenedor_galeria{
+        background-color: #202029;
+        padding: 1.5%;
+        text-align: center;
+    }
+
+    .articulo_galeria{
+        background-color: #835932;
+        padding: 1.2%;
+        border-radius: 1em;
+        margin-bottom: 1em;
+        height: max-content;
+    }
+
+    .articulo_galeria img{
+        border-radius: .8em;
+        border: #7e7e83 .25em solid;
+        
+    }
+
+/* ----------------------------------------- MAIN - TABLA -------------------------------------------*/
+
+/* ---------------------------- TABLA ------------------------------*/
+
+.contenedor_tabla{
+    background-color: #202029;
+    padding: 1.5%;
+}
+
+.encabezado_tabla{
+    display: none;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background: #835932;
+
+}
+.fila_tabla{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.fila_tabla td{
+    background-color: aliceblue ;
+    border: .3em solid #835932;
+}
+
+.fila_tabla td:nth-of-type(1):before {
+    content: "-";
+    background-color: #835932;
+    padding: .1em 2.5em;
+    margin-right: .4em;
+    border-right: .3em solid #835932;
+    color: #f5f3f5;
+}
+.fila_tabla td:nth-of-type(2):before {
+    content: "Sistema Operativo";
+    background-color: #835932;
+    padding: .1em .2em;
+    margin-right: .4em;
+    border-right: .3em solid #835932;
+    color: #f5f3f5;
+
+}
+.fila_tabla td:nth-of-type(3):before {
+    content: "Procesador";
+    background-color: #835932;
+    padding: .1em .2em;
+    color: #f5f3f5;
+    margin-right: .4em;
+    border-right: .3em solid #835932;
+
+
+}   
+.fila_tabla td:nth-of-type(4):before {
+    content: "Memoria";
+    background-color: #835932;
+    padding: .1em .2em;
+    color: #f5f3f5;
+    margin-right: .4em;
+    border-right: .3em solid #835932;
+
+
+}
+.fila_tabla td:nth-of-type(5):before {
+    content: "Almacenamiento";
+    background-color:#835932;
+    padding: .3em .2em;
+    font-size: .8em;
+    margin-right: .4em;
+    color: #f5f3f5;
+    border-right: .3em solid #835932;
+
+
+}
+.fila_tabla td:nth-of-type(6):before {
+    content: "Graficos";
+    background-color: #835932;
+    padding: .1em .2em;
+    margin-right: .4em;
+    border-right: .3em solid #835932;
+
+    color: #f5f3f5;
+
+}
+caption{
+    background:#835932;
+}
+
+/* ---------------------------- ASIDE - TABLA ------------------------------*/
+
+
+.adicional_tabla{
+    text-align: center;
+    padding: .8em;
+    background-color: #d16b0c;
+    border-radius: 1em;
+    color: #f5f3f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.adicional_tabla figcaption{
+    color: black;
+    font-size: .7em;
+}
+.adicional_tabla a{
+    font-size: 1em;
+    margin: .24em 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+
+.adicional_tabla a:hover{
+    color: #000000;
+}
+
+
+/* ----------------------------------------- MAIN - REGISTRO -------------------------------------------*/
+.contenedor_registro{
+    background-color: #202029;
+    padding: 1.5%;
+}
+
+.contenedor_registro h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.formulario{
+    background-color: #553d8f;
+    padding: .3em;
+    margin: .3em 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: .3em;
+}
+
+.campos_form{
+    display: flex;
+    flex-direction: column;
+}
+
+.campos_form input, .campos_form textarea, .campos_form button{
+    margin: .6em 0px;
+    padding: .25em;
+    border-radius: .3em;
+}
+
+.campos_form button{
+    background-color: #341c6d;
+    color: #f5f3f5;
+    padding: .2em 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* ------------------------------------------ FOOTER ---------------------------------------------*/
+    #pie_pagina{
+        background-color:#1e0c1b ;
+        color: #f5f3f5;
+        text-align: center;
+    }
+
+
+
+/* ----------------------------------- DISEÑO PARA TABLETS? ------------------------------------------*/
+@media all and (min-width:767px){
+    
+/* ------------------------------ MAIN - INDEX -------------------------------------*/
+    .contenedor_principal{  
+        column-count: 2;
+        column-gap: 5%;
+        padding-top: 1em ;
+        column-rule: 0.4em solid #4c4c4f;
+    }
+
+/* ------------------------------ MAIN - GALERIA-------------------------------------*/
+    .contenedor_galeria{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .articulo_galeria{
+        width: 45%;
+    }
+    
+}
+
+
+
+/* ------------------------------------ DISEÑO PARA ESCRITORIO -----------------------------------------*/
+
+
+@media all and (min-width:1024px){
+    
+/* ----------------- Header ------------------------*/
+
+/* ------------------- Barra de Navegación ------------------------*/
+    #contenedor-menu #cerrar, #contenedor-menu #abrir, #contenedor-menu:target #cerrar {
+        display: none;
+    }
+      
+    .contenedor_logo{
+        width:100%;
+    }
+
+    #contenedor-menu img {
+        width: 4.5em;
+        
+    }
+
+
+    #contenedor-menu #contenedor-enlaces, #contenedor-menu:target #contenedor-enlaces{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;  
+    }
+    #contenedor-menu #contenedor-enlaces ul{
+        display: flex;  
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    #contenedor-enlaces ul li a{
+        width: 22vw;
+        margin-bottom: 1em; 
+    }
+
+
+
+/* ----------------- MAIN - INDEX ------------------------*/
+
+    .contenedor_principal{  
+        column-count: 3;
+        column-gap: 2%;
+        padding-top: 1em ;
+        column-rule: 0.4em solid #4c4c4f;
+    }
+
+/* ----------------- MAIN - GALERIA ------------------------*/
+
+.articulo_galeria{
+    width: 31%;
+}
+
+/* ----------------------------------- MAIN - TABLA ------------------------------------------*/
+
+.contenedor_tabla{
+    display: flex;
+        
+}
+
+
+.fila_tabla td:before {
+    display: none;
+    
+}
+
+.fila_tabla{
+    display: table-row;
+    margin-bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+.fila_tabla td{
+    padding: .25em;
+}
+
+
+.encabezado_tabla{
+    display: table-row;
+    width: 100%;
+}
+
+.encabezado_tabla th{
+    background-color: #835932;
+    border: .3em solid #835932;
+    color: #f5f3f5;
+}
+
+/* ----------------- ASIDE - TABLA ------------------------*/
+
+.adicional_tabla{
+    margin-left: 1em;
+    
+}
+
+.adicional_tabla figcaption{
+    font-size: 1em;
+    
+}
+.adicional_tabla a{
+    font-size: 1.5em;
+}
+
+/* ----------------------------------------- MAIN - REGISTRO -------------------------------------------*/
+
+.contenedor_registro{
+    height: 68vh;
+
+}
+
+.formulario{
+    width: 70%;
+    margin: 0 auto;
+}
+.campos_form{
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.campos_form input, .campos_form textarea{
+    width: 60%;
+    margin-left: .6em;
+}
+
+.campos_form:nth-child(4){
+    align-items: normal;
+}
+.campos_form button{
+    margin-right: 1em;
+}
+
+
+
+}
+
+
+@media all and (min-width:1440px){
+   
+    .articulo_galeria{
+        width: 24%;
+    }
+}

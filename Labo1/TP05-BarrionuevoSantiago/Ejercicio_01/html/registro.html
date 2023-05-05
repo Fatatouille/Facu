@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- DOCTYPE indica al Navegador que versión de HTML estamos utilizando -->
+<html lang="es-la"> <!--• La Etiqueta HTML indica que allí inicia el archivo. El Atributo lang, indica en qué idioma estará hecho el archivo..-->
+
+<head>  <!-- La Etiqueta head (cabeza o cabecera), contiene configuraciones que generalmente no se muestran directamente en la página, a excepción de title -->
+    <!-- Los metas indican información adicional -->
+    <meta charset="UTF-8">  <!-- indica que se debe usar un conjunto de caracteres que haga posible mostrar todos los símbolos del español y más -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   <!-- Sirve para saber la compatibilidad con los navegadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--  sirve para optimizar los sitios para móviles, esta etiqueta ayuda a definir el ancho, alto y escala del área usada por el navegador para mostrar contenido.  -->
+    <meta name="description" content="Acá encontrarás todo la información del juego 'The Binding Of Isaac'">
+    <meta name="author" content="Barrionuevo Santiago">
+    <title>VIDEOJUEGO</title>  <!-- Sirve para dar un titulo a la página -->
+    <link rel="stylesheet" href="../css/estilo.css">   <!-- Enlaza una hoja de estilo (CSS) a la página -->
+
+</head> <!-- Etiqueta que finaliza el Head -->
+
+<body>  <!-- Contiene todo el cuerpo de la página, lo que se vé en ella -->
+
+   
+    
+    <nav class="salto_navegacion">   <!-- Sirve para poner una barra de navegación donde hay enlaces, para manejarse entre el sitio -->
+        <ul class="lista_salto">    <!-- ul "unordered list" (lista desordenada) sirve para contener elementos de lista no ordenados -->
+            <li><a class="salto_link" title="inicio del sitio" href="#principal">Saltar al contenido</a></li>   <!-- li (list items- elementos de lista) acá se pone tode los elementos que desea usar. Como un "a" que es una etiqueta para enlaces. Esta te devuelve a la misma página o al incio -->
+            <li><a class="salto_link" title="Final del sitio" href="#navegar">Saltar a la Navegación</a></li> 
+        </ul>  <!-- Cierre de la etiqueta ul -->            
+    </nav>
+   
+    
+    <header class="encabezado">    <!-- El header (Encabezado) aquí debe de contener el Titulo, el logo e información introductoria -->
+        
+        <section id="contenedor-menu">
+            <section class="contenedor_logo">
+                <img src="../img/kanji.png"  class="imagen_logo" alt="Kanji con el nombre de Sekiro">
+                <h1>SEKIRO: SHADOWS DIE TWICE</h1>
+            </section>
+            <a href="#contenedor-menu"><img src="../img/burger_menu.png" alt="icono abrir navbar" id="abrir"></a>
+            <a href="#"><img src="../img/cerrar_menu.png" alt="icono cerrar navbar" id="cerrar"></a>
+
+            <nav id="contenedor-enlaces">
+                
+                <ul id="navegar">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="tabla.html">Información Adicional</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                </ul>
+            </nav>
+    </section>
+    </header>   <!-- Finaliza el header -->
+
+    
+   
+    
+        <main>  <!-- Está etiqueta es para contener lo principal de la página, toda la información, fotos, textos, videos, etc -->
+            
+            <section class="contenedor_registro" id="principal">
+                <h2>Registro</h2>
+                    
+                <form action="enviar.php" method="post" class="formulario">
+                    <section class="campos_form">
+                        <label for="nom">Nombre:</label><input type="text" id="nom" placeholder="Ingrese un nombre de usuario" required>
+                    </section>
+                    <section class="campos_form">
+                        <label for="correo">Correo Electronico:</label><input type="email" id="correo" placeholder="Ejemplo: ejemplo@ejemplo.com" required>
+                    </section>
+                    <section class="campos_form">
+                        <label for="cel">Telefono:</label><input type="tel" name="celular" id="cel" placeholder="3863000101" required>
+                    </section>
+                    <section class="campos_form">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea  id="mensaje" cols="30" rows="10" placeholder="Escriba aqui..." required></textarea>
+                    </section> 
+                    <section class="campos_form">
+                        <button type="submit">Enviar Mensaje</button>
+                        <button type="reset">Limpiar Campos</button>
+                    </section> 
+                </form>
+                
+                
+            </section>
+           
+        </main> <!-- Cierre del main -->
+    
+    <footer id="pie_pagina">    <!-- Sirve para contener información adicional como: datos de derechos de autor, enlaces de documentos relacionados, autor de la seccion-->
+        <p>© copyright Gimenez Francisco</p>
+        <a href="mailto:franciscomiguelgimenez708@gmail.com">Correo Electronico</a>
+    </footer>   <!-- Cierre del footer -->
+</body> <!-- Cierre del body -->
+</html> <!-- Cierre del html -->
