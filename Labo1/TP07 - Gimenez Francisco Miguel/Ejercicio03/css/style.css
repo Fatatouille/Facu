@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    border:0;
+    padding:0;
+}
+header{
+    background:#fff159;
+    padding:1em;
+}
+body{
+    background:#dedede;
+}
+main{
+    padding:1em;
+}
+figure{
+    width:100%;
+}
+figure img{
+    width:100%;
+}
+input{
+    border:1px solid #000;
+}
+input[type="submit"]{
+    margin-top:.7em;
+    width:20%;
+    padding:.8em;
+    border:none;
+    border-radius: 8px;
+    background:#3483fa;
+    color:#fff;
+    cursor:pointer;
+
+}
+section{
+    display:flex;
+    border:1px solid #000;
+    background:#fff;
+    margin:auto;
+    margin-top:1em;
+    width:98%;
+}
+#totales{
+    background:#dedede;
+    padding:1em;
+    margin:1em;
+    width:40%;
+    flex-direction:column;
+    border-radius:8px;
+    border:0;
+}

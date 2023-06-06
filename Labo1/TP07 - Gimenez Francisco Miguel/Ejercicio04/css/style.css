@@ -1,0 +1,46 @@
+*{
+    border:0;
+    margin:0;
+    padding:0;
+}
+img{
+    width:1.4em;
+    cursor:pointer;
+}
+#ocultar{
+    display:none;
+}
+form{
+    margin:auto;
+    width:50%;
+    padding:2em;
+    background:#fae7c3;;
+}
+fieldset{
+    display:flex;
+    flex-direction: column;
+    padding:1em;
+    border-top:1px solid #d738ff;
+    justify-content:center;
+    align-items:center;
+}
+legend{
+    text-align:center;
+    color:#d738ff;
+}
+input{
+    border:1px solid #d738ff;
+    width:50%;
+}
+#contra{
+    width:90%;
+}
+input[type="submit"]{
+    margin-top:1em;
+    padding:.5em;
+    background:#b678c5;
+    color:#fff;
+}
+label{
+    width:50%;
+}

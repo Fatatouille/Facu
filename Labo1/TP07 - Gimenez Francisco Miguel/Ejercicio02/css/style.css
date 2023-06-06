@@ -1,0 +1,47 @@
+*{
+    border:0;
+    margin:0;
+    padding:0;
+}
+body{
+    background:#eeeeee;
+}
+header{
+    background:#28f1ff;
+    padding:1em;
+}
+h1{
+    text-align:center;
+}
+main{
+    padding:1em;
+    display:flex;
+}
+form{
+    border:1px solid #000;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin:auto;
+    width:40%;
+    padding:1em;
+    background:#fff;
+}
+input{
+    width:20%;
+    text-align:center;
+    margin:4px;
+    border:1px #000 solid;
+}
+label{
+    display:flex;
+}
+input[type="button"]{
+    padding:6px;
+    background: #faf624;
+    border:none;
+}
+input[type="checkbox"]{
+    width:100%;
+}
