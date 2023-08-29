@@ -22,6 +22,7 @@ if(isset($_GET['enviar'])){
         <input type="number" name="precio" id="precio" placeholder="Precio entre 10k y 50k" min="10000" max="50000" step="0.1">
         <input type="submit" name="enviar" value="Enviar">
     </form>
+    <?php if(isset($_GET['enviar'])){ ?>
     <main>
         <section class="header">
         <b>Detalle</b> <b>IMPORTE</b>
@@ -33,6 +34,7 @@ if(isset($_GET['enviar'])){
             <article><p>TOTAL</p> <b><?php echo $total ?></b></article>
         </section>
     </main>
+    <?php } ?>
     <footer>Copyright 2023 - Giménez Francisco Miguel</footer>
 </body>
 </html>
