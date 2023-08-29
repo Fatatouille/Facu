@@ -1,0 +1,23 @@
+p{
+    background: #a22;
+    border: 8px groove #000;
+    border-radius:25px;
+    box-sizing: border-box;
+    box-shadow: -10px 10px #e41919;
+    width: 50%;
+    text-align: center;
+    margin:30% auto;
+    padding: 1em;
+    color: #ddd;
+}
+footer{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    padding:1em;
+    left:0;
+    background:#a22;
+}
+body{
+    background:#252525;
+}

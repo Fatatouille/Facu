@@ -1,0 +1,47 @@
+body{
+    background: #24e4b4;
+}
+footer{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    padding:1em;
+    background:#000;
+    color:#fff;
+    text-align:center;
+}
+form{
+    width:50%;
+    margin:auto;
+    display:flex;
+}
+input{
+    margin:.5em;
+    width: 30%;
+}
+input[type='submit']{
+    padding:10px;
+    border:none;
+    background:#000;
+    color:#fff;
+}
+main{
+    border: 7px solid #000;
+    width: 30%;
+    margin:auto;
+    background: #d4d4d4;
+}
+section{
+    padding:1em;
+}
+.header{
+    border-bottom: 5px dashed #000;
+    display:flex;
+    justify-content: space-between;
+}
+article{
+    display:flex;
+    justify-content:space-between;
+    padding-bottom:1em;
+}
