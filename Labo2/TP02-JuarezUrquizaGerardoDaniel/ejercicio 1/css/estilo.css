@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+header{
+    background-color: #6758AD;
+    text-align: center;
+    color: #FFF9CF;
+    padding: 10px;
+}
+aside{
+    background-color: #ADA66A;
+}
+p{
+    background-color: #6758AD;
+    color: #FFF9CF;
+    text-align: center;
+    font-size: large;
+    padding: 1em;
+}
+section{
+    background-color: #FFF9CF;
+}
+footer{
+    background-color: black;
+    color: white    ;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+    bottom: 0;
+}

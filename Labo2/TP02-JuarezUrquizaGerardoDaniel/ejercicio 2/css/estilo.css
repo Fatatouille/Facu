@@ -1,0 +1,24 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+section{
+    margin:auto;
+    width:50%;
+    border: 1px solid #000;
+    text-align:center;
+}
+footer{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    color:#fff;
+    background:#000;
+    text-align:center;
+    padding:1em;
+}
+h1{
+    padding:1em;
+    background:#a19685;
+}

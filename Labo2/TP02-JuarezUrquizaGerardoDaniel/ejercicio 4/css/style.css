@@ -1,0 +1,28 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+footer{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    padding:1em;
+    background: #000;
+    color:#fff;
+    text-align: center;
+}
+article{
+    margin:auto;
+    width:40%;
+    border: 1px solid #000;
+}
+h2{
+    background:#919191;
+    text-align: center;
+    padding:1em;
+}
+p{
+    padding:.6em;
+    text-align: center;
+}
