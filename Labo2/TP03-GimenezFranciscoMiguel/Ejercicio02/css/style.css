@@ -1,0 +1,40 @@
+*{
+    border:0;
+    padding:0;
+    margin:0;
+}
+footer{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    padding:1em;
+    color:#fff;
+    background: #000;
+    text-align: center;
+}
+main{
+    background:linear-gradient(to bottom, #3dd4cd, #2d9279, #3dd4cd);
+    width: 40%;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height:14em;
+    padding:1em;
+}
+main b{
+    width:1em;
+    padding:.2em;
+    background:#f0e223;
+    border-radius:5px;
+    margin-top: 10%;
+}
+article{
+    display: flex;
+    justify-content: space-between;
+    width:30%;
+}
+img{
+    width:30%;
+}
