@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+h1{
+    background-color: aqua;
+    padding: .7em;
+    text-align: center;
+}
+h2{
+    background-color:rgb(45, 158, 45) ;
+    padding: 1em;
+    text-align: center;
+}
+p{
+    text-align: center;
+    background-color:grey;
+    font-size: larger;
+}
+.uno{
+    background-color: aliceblue;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+}
+
+form{
+    background-color: rgb(248, 177, 23);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+
+}
+legend{
+    text-align: center;
+}
+
+input{
+    padding: .5em;
+    margin: .5em;
+    border-radius: .5em;
+}
+label{
+    margin: .6em;
+}
+input[type="submit"]{
+    width:5em ;
+    margin: auto;
+    background-color: rgb(5, 180, 5);
+    color: white;
+}
