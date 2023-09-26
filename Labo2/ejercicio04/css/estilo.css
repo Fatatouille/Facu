@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    color: none;
+}
+form{
+    background-color: #000000;
+    border-radius: .9em;
+    display: flex;
+    flex-direction: column;
+    width: 26%;
+    margin: auto;
+    text-align: center;
+    padding: 1.6em;
+    
+}
+h1{
+    color: white !important;
+    margin: 0;
+}
+p{
+    color: gray;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    margin: 1.2em 0;
+}
+label{
+    color: rgb(233, 233, 233);
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+}
+input{
+    border-radius: .4em;
+    padding: .3em;
+}
+input[type="submit"]{
+    background:black;
+    border: white .15em solid;
+    color: white;
+    width: 20%;
+    margin: auto;
+}
+
+
+
+main{
+    background: #000000;
+    color: white;
+    padding: 3em;
+    text-align: center;
+}
