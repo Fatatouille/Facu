@@ -23,6 +23,9 @@ typedef struct Tnodo
 void nuevaLista(Tnodo **Start, Tnodo *lista);
 Tnodo * CrearNodo(TProducto proveedor);
 void filtrar(Tnodo **Start, float precio, Tnodo ** Inicio);
+void filtroStock(Tnodo **Start, int stock, Tnodo **Inicio);
+void liberarLista(Tnodo *Start);
+int SinStock(Tnodo **Start);
 
 int main()
 {
@@ -65,27 +68,32 @@ int main()
 
     MostrarCantidadSinStock(cantidadSinStock); 
     //FIN PUNTO 3
-
+    
     // PUNTO 4. Desenlazar los productos sin stock y mostrarlos
     Tnodo *productosFiltradoPorStock=NULL;
-    Tnodo *Start2=NULL, *Start3=NULL;
+    Tnodo *Start2=NULL;
     int stock;
     printf("Ingrese stock: \n");
     scanf("%d", &stock); 
     printf("Stock ingresado: %d",stock);
     // ingrese su código aquí
     
+    filtroStock(&Start, stock, &Start2);
+    productosFiltradoPorStock= Start2;
+
     MostrarLista(productosFiltradoPorStock, "Productos con stock mayor al ingresado");
     MostrarLista(listaDeProductos, "Productos con stock menor a al ingresado"); 
     // FIN PUNTO 4
 
     //PUNTO 5. Liberar todas las listas
     // ingrese su código aquí
-    free(Start);
-    free(Inicio);
-    free(productosFiltradoPorStock);
-    free(productosFiltradosPorPrecio);
-    free(listaDeProductos);
+    
+    liberarLista(Start);
+    liberarLista(Inicio);
+    liberarLista(Start2);
+    liberarLista(listaDeProductos);
+    liberarLista(productosFiltradosPorPrecio);
+    liberarLista(productosFiltradoPorStock);
 
     MostrarLista(listaDeProductos, "Lista vacia de listaDeProductos "); 
     MostrarLista(productosFiltradosPorPrecio, "Lista vacia de productosFiltradosPorPrecio");
@@ -126,4 +134,29 @@ int SinStock(Tnodo **Start){
         Aux = Aux->siguiente;
     }
     return cont;
+}
+//BUSCA Y ELIMINA PT4
+void filtroStock(Tnodo **Start, int stock, Tnodo **Inicio){
+    Tnodo **Aux=Start;
+    while(*Aux!=NULL){
+        if(((*Aux)->dato.Stock) < stock){
+            Tnodo *Nodito= CrearNodo((*Aux)->dato);
+            nuevaLista(Inicio, Nodito);
+            Tnodo *temp = *Aux;
+            *Aux = (*Aux)->siguiente;
+            free(temp);
+        }else{
+            Aux = &(*Aux)->siguiente;
+        }
+        
+    }
+}
+
+//PT 5 LIBERA LISTAS
+void liberarLista(Tnodo *Start){
+    while(Start!=NULL){
+        Tnodo *temp=Start;
+        Start=Start->siguiente;
+        free(temp);
+    }
 }
